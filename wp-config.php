@@ -75,8 +75,6 @@ $table_prefix  = 'wp_';
  */
 define('WPLANG', 'ja');
 
-//test
-
 /**
  * 開発者へ: WordPress デバッグモード
  *
