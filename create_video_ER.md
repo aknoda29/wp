@@ -50,15 +50,14 @@ object worker_movie {
    name
 }
 ' -- Diagram -----------------
-game *-- video : 1:N
+video *-- game : 1:N
 video *-- video_telop : 1:N
 video *-- video_tag : 1:N
-game *-- theme : 1:N
+theme *-- game : 1:N
 theme *-- video : 1:N
-video_gameworker *-- video : 1:N
-video_movieworker *-- video : 1:N
-worker_game *-- video_gameworker : 1:N
-worker_movie *-- video_movieworker : 1:N
-video_tag *-- video : 1:N
+video *-- video_gameworker : 1:N
+video *-- video_movieworker : 1:N
+video_gameworker *-- worker_game : 1:N
+video_movieworker *-- worker_movie : 1:N
 @enduml
 ```
